@@ -174,7 +174,7 @@
     async function updateVisitorCount() {
       try {
         const response = await axios.post(API_ENDPOINT);
-        const visitorCount = response.data.count * 233486; // Multiplying by 233486 as requested
+        const visitorCount = response.data.count * 233486; 
         document.getElementById('visitor-counter').textContent = `Total Visitors: ${visitorCount.toLocaleString()}`;
       } catch (error) {
         console.error('Error updating visitor count:', error);
